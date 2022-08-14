@@ -79,42 +79,67 @@ $('.navbar-side-open [data-bs-toggle="collapse"], .navbar-overlay [data-bs-toggl
 /*---------------------------------
    Carousel (Owl Carousel)
 ----------------------------------- */
-$(".owl-carousel").each(function (index) {
-    var a = $(this);
-	if ($("html").attr("dir") == 'rtl') {
-		var rtlVal = true
-	}else{
-		var rtlVal = false
+// $(".owl-carousel").each(function (index) {
+//     var a = $(this);
+// 	if ($("html").attr("dir") == 'rtl') {
+// 		var rtlVal = true
+// 	}else{
+// 		var rtlVal = false
+//     }
+// 	$(this).owlCarousel({
+// 		rtl: rtlVal,
+// 		autoplay: a.data('autoplay'),
+// 		center: a.data('center'),
+// 		autoplayTimeout: a.data('autoplaytimeout'),
+// 		autoplayHoverPause: a.data('autoplayhoverpause'),
+// 		loop: a.data('loop'),
+// 		speed: a.data('speed'),
+// 		nav: a.data('nav'),
+// 		dots: a.data('dots'),
+// 		autoHeight: a.data('autoheight'),
+// 		autoWidth: a.data('autowidth'),
+// 		margin: a.data('margin'),
+// 		stagePadding: a.data('stagepadding'),
+// 		slideBy: a.data('slideby'),
+// 		lazyLoad: a.data('lazyload'),
+// 		navText:['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+// 		animateOut: a.data('animateout'),
+// 		animateIn: a.data('animatein'),
+// 		video: a.data('video'),
+// 		items: 5,
+// 		responsive:{
+//         0:{items: a.data('items-xs'),},
+//         600:{items: a.data('items-xs'),},
+// 		1000:{items: a.data('items-xs'),},
+//         1400:{items: a.data('items-xs'),}
+//         }
+//     });
+// });
+
+/*---------------------------------
+   Brand Carousel (Owl Carousel)
+----------------------------------- */
+
+$('.brand-carousel').owlCarousel({
+  loop:true,
+  margin:30,
+  autoplay:true,
+  items: 3,
+  autoplayHoverPause: true,
+  autoWidth: true,
+  autoHeight: false,
+  responsive:{
+    0:{
+      items:1
+    },
+    600:{
+      items:3
+    },
+    1000:{
+      items:6
     }
-	$(this).owlCarousel({
-		rtl: rtlVal,
-		autoplay: a.data('autoplay'),
-		center: a.data('center'),
-		autoplayTimeout: a.data('autoplaytimeout'),
-		autoplayHoverPause: a.data('autoplayhoverpause'),
-		loop: a.data('loop'),
-		speed: a.data('speed'),
-		nav: a.data('nav'),
-		dots: a.data('dots'),
-		autoHeight: a.data('autoheight'),
-		autoWidth: a.data('autowidth'),
-		margin: a.data('margin'),
-		stagePadding: a.data('stagepadding'),
-		slideBy: a.data('slideby'),
-		lazyLoad: a.data('lazyload'),
-		navText:['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
-		animateOut: a.data('animateout'),
-		animateIn: a.data('animatein'),
-		video: a.data('video'),
-		items: a.data('items'),
-		responsive:{
-        0:{items: a.data('items-xs'),},
-        576:{items: a.data('items-sm'),},
-		768:{items: a.data('items-md'),},
-        992:{items: a.data('items-lg'),}
-        }
-    });
-});
+  }
+})
 
 /*------------------------------------
     Magnific Popup
