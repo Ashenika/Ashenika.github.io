@@ -2061,6 +2061,11 @@ hr {
   transition: all 0.3s ease-in-out;
 }
 
+
+.client-name {
+  color: white;
+}
+
 /*=== 5.2 Team ===*/
 .team {
   text-align: center;
@@ -3412,7 +3417,7 @@ select.form-control:not([size]):not([multiple]):not(.form-control-sm) {
 }
 
 .text-primary {
-  color: #f5df4e !important;
+  color: #d9ac36 !important;
 }
 
 .btn-link {
@@ -3659,4 +3664,8 @@ input:-internal-autofill-selected {
   right: auto;
   left: -40px;
   border-radius: 4px 0px 0px 4px;
+}
+
+.img-fluid-brand {
+  max-width: 40px;
 }
