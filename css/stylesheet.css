@@ -2063,7 +2063,11 @@ hr {
 
 
 .client-name {
-  color: white;
+  color: black;
+}
+
+.client-link {
+  color: #d9ac36;
 }
 
 /*=== 5.2 Team ===*/
